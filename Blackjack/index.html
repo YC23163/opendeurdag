@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="scripts/jquery-ui.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.jpg">
+
+    <title>Blackjack: The Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <h2>BlackJack: The Game</h2>
+        </div>
+        <div id="dealer" class="speelveld">
+            <div class="gegevens naam" id="dealer">Dealer</div>
+            <div id="scoreDealer" class="gegevens score">
+                ...
+            </div>
+            <div id="spelStatusDealer" class="gegevens"><p></p></div>
+            <div id="kaartenDealer" class="kaarten kaartenDealer">
+            </div>
+        </div>
+
+        <div id="speler" class="speelveld">
+            <div class="gegevens naam" id="test">Jij</div>
+            <div id="scoreSpeler" class="gegevens score">...</div>
+            <div id="spelStatusSpeler" class="gegevens"><p></p></div>
+            <div id="inzetSpeler" class="gegevens chips">Inzet: $00.00 </div>
+            <div id="kaartspeler" class="kaarten kaartenSpeler"></div>
+
+        </div>
+
+            <div id="chips" class="gegevens chips chipsLayout">chips: $100.00</div>
+            <div id="huidigeInzet" class="gegevens chips chipsLayout">Huidige inzet: $00.00</div>
+            <input id="verhogen" class="knoppen2" type="reset" value="Verhoog inzet">
+            <input id="verlagen" class="knoppen2" type="reset" value="Verlaag inzet">
+
+
+        <div id="controls">
+            <input id="lel" class="knoppen" type="reset" value="Deal">
+            <input id="hit" class="knoppen" type="reset" value="Hit" disabled="disabled">
+            <input id="stand" class="knoppen" type="reset" value="Stand" disabled="disabled">
+            <input id="regels" class="knoppen" type="reset" value="Blackjack Regels">
+        </div>
+        <div id="timer" class="gegevens">Nog 5 seconden voor een volgende ronde start</div>
+            <div id="slide">
+                <div id="accordion">
+                            <h4>Doel</h4>
+                    <div>
+
+            <p>
+                Het doel van het spel is om de bank (dealer) te verslaan. Hierbij moet men proberen dichter bij de 21 punten te komen dan de bank. Als de speler boven de 21 punten uitkomt heeft hij verloren, ongeacht wat de bank heeft.
+            </p>
+                    </div>
+            <h4>Puntentelling (score)</h4>
+                    <div>
+            <p>
+                Kaarten met afbeeldingen (Boer, Vrouw, Heer) zijn 10 punten waard. De kaarten 2 - 10 hebben de waarde die zij aangeven. De aas is 1 put waard. Als de dealer evenveel heeft als de speler is het een "stand-off" of "push" (gelijkspel).
+            </p>
+                    </div>
+            <h4>Het spel</h4>
+                    <div>
+            <p>
+                Om te beginnen zet de speler (U) een bepaalde inzet. U kunt natuurlijk niet over het aantal chips
+                gaan dat u in bezit hebt. Hierna kunt u op de knop "Deal" drukken. De dealer en de speler (U)
+                zullen twee kaarten krijgen. Bij de dealer wordt 1 kaart ondersteboven getoond.
+            </p>
+
+            <p>
+                Na deze kaarten zijn uitgedeeld, kan de speler (U) meer kaarten nemen door op de knop "hit" 
+                te klikken (1 kaart per klik) tot ze 21 bereikt of erover gaat. De speler (U) mag elk moment stoppen 
+                door op de knop "stand" te klikken.
+            </p>
+
+            <p>
+                Wanneer de speler (U) op de knop "stand" heeft gedrukt, is het de beurt aan de dealer en wordt zijn omgedraaide kaart getoond. De dealer moet "hit" doen als zijn totaal aantal punten minder is als 17 en gaat door met 
+                "hit" totdat hij 17 of meer heeft. Als de dealer meer als 21 heeft, heeft de speler (U) gewonnen.
+            </p>
+
+            <p>
+                Als zowel de dealer als de speler niet boven de 21 gaan, wint de speler (U) wanneer uw totaal hoger is als die van de dealer.
+            </p>
+                        </div>
+            <h4>Inzetten</h4>
+                        <div>
+            <p>
+                De speler (U) krijgt een startkrediet van $100.00 chips. Per klik op de knop "verhoog" en "verlaag", zal je inzet met $5.00 stijgen of dalen. De speler kan een maximum inzet hebben van het totaal aantal chips dat hij heeft. 
+                De speler (U) kan tijdens de ronde het aantal chips verhogen, maar niet verlagen. De speler (U) moet op het begin van de volgende ronde zijn inzet terug opnieuw ingeven.
+            </p>
+
+            <p>
+                Als de speler (U) wint met blackjack, wordt de speler (U) zijn/haar inzet verdubbeld en toegevoegd aan het aantal chips. Als de dealer wint, wordt de inzet ingehouden en speel je verder met het aantal chips dat je nog hebt.
+            </p>
+                    </div>
+            <h4>Speciale acties</h4>
+                    <div>
+            <p>
+                <i>
+                    Knoppen worden automatisch aan/uitgezet aan de hand van welke actie u heeft verricht. Door de game heen kan de speler (U) het aantal chips altijd verhogen, maar niet verlagen.
+                </i>
+            </p>
+                </div>
+
+            <h4>Extra regels</h4>
+                <div>
+            <p>
+                Blackjack regels kunnen zeer sterk variëren. De regels die gebruikt worden in deze game, zijn gebaseerd op LAs Vegas casino regels. Eventuele bugs kunnen altijd gemeld worden aan de aanwezige leerlingen.
+                Bij voorbaat dankt!
+            </p>
+                    </div>
+                </div>
+           </div>
+        <div id="muziek">
+        <embed src="music.mp3" height="0" autostart="true" loop="true">
+         </div>
+    </div>
+</body>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.3.js"></script>
+    <script type='text/javascript' src="scripts/jquery-ui.min.js"></script>
+	<script type='text/javascript' src="jquery.js"></script>
+	
+</html>
