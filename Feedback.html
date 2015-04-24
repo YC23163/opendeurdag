@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Feedback</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Styles.css" rel="stylesheet" />
+    <link href="css/feedbackform.css" rel="stylesheet" />
+    <style>
+        .navbar-inverse {
+            background-color: #A2C012;
+        }
+
+        .textbox {
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigatie -->
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container" role="navigation">
+            <a href="#" class="pull-left"><img class="img-rounded" width="50" height="50" src="Immalle.jpg"></a>
+            <a href="index.html" class="navbar-brand">Immalle</a>
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Info</a></li>
+                    <li class="dropdown">
+                        <a href="info.html" class="dropdown-toggle" data-toggle="dropdown">IT-info<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Chat.html">Team Chat Tools</a></li>
+                            <li><a href="CloudStoragesPage.html">Cloudstorages</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Games<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Browsergames.html">Browsergames</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="active"><a href="Feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            </div>
+
+        </div>
+            <!-- Content -->
+    <div class="container">
+        <div id="HCB_comment_box">Formulier is aan het laden... even geduld aub...</div>
+        <script type="text/javascript" id="hcb">
+            if (!window.hcb_user) { hcb_user = {}; } (function () { var s = document.createElement("script"), l = ("" + window.location).replace(/'/g, "%27") || hcb_user.PAGE, h = "//www.htmlcommentbox.com"; s.setAttribute("type", "text/javascript"); s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&opts=16663&num=50"); if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s); })();
+        </script>
+    </div>
+
+
+
+        <!-- footer -->
+        <div class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container">
+                <p class="navbar-text pull-left">&copy; Design: Maarten Vissers, Yordi Coussement, Mario van Kerckhoven, Wout Wynen, Ignas Gers</p>
+                <a href="http://www.immalle.be/" target="_blank" class="navbar-btn btn-succes pull-right">Bezoek hier onze school website!</a>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    // This code goes ABOVE the main HTML Comment Box code!
+    // replace the text in the single quotes below to customize labels.
+    hcb_user = {
+        // L10N
+        comments_header : 'Laat hier uw reactie achter!',
+        name_label : 'Naam',
+        content_label: 'Geef hier uw naam in',
+        submit : 'Plaats',
+        no_comments_msg: 'Er heeft nog niemand een reactie geplaatst...',
+        add:'Plaats uw reactie',
+        again: 'Plaats nog een reactie.',
+        said:'said:',
+        prev_page:'<img src="//www.htmlcommentbox.com/static/images/arrow_left.png" class="hcb-icon" title="previous page" alt="[prev]"/>',
+        next_page:'<img src="//www.htmlcommentbox.com/static/images/arrow_right.png" class="hcb-icon" title="next page" alt="[next]"/>',
+        showing:'Showing',
+        to:'to',
+        website_label:'website (optional)',
+        email_label:'email',
+        anonymous:'Onbekend',
+        mod_label:'(mod)',
+        are_you_sure:'Do you want to flag this comment as inappropriate?',
+
+        reply: '<img src="//www.htmlcommentbox.com/static/images/reply.png"/> reply',
+        flag:'<img src="//www.htmlcommentbox.com/static/images/flag.png"/> flag',
+        like:'<img src="//www.htmlcommentbox.com/static/images/like.png"/> like',
+
+        //dates
+        days_ago:'Dagen geleden',
+        hours_ago:'Uren geleden',
+        minutes_ago:'Minuten geleden',
+        within_the_last_minute:'Minder dan een minuut geleden',
+
+        msg_thankyou:'Bedankt voor uw reactie!',
+        msg_approval:'(this comment is not published until approved)',
+        msg_approval_required:'Thank you for commenting! Your comment will appear once approved by a moderator.',
+
+        err_bad_html:'Your comment contained bad html.',
+        err_too_frequent:'Even geduld a.u.b, u postte te snel een nieuwe reactie.',
+        err_comment_empty:'Uw reactie werd niet geplaatst omdat het tekstvak nog leeg is!',
+        err_denied:'Om bepaalde redenen werd uw reactie niet aangeplaatst.',
+
+        //SETTINGS
+        MAX_CHARS: 5000,
+        PAGE:'', // ID of the webpage to show comments for. defaults to the webpage the user is currently visiting.
+        RELATIVE_DATES: true // show dates in the form "X hours ago." etc.
+    };
+        </script>
+
+    </body>
+    </html>

@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link media="screen" href="css/Styles.css" rel="stylesheet" />
+    <style>
+        .navbar-inverse {
+            background-color: #A2C012;
+        }
+
+        #welcome {
+            font-size:200%;
+            border:3px solid green;
+            background-color: #A2C012;
+            padding:10px;
+            text-align:center;
+            border-radius:5px;
+
+        }
+
+        #home-img-mobile{
+            width:70%;
+            height:70%;
+            margin-left:15%;
+           margin-top:10%;
+            border-radius:5px;
+            border:2px solid black;
+            margin-bottom:10px;
+        }
+        #home-img-desktop{
+             width:60%;
+            height:50%;
+            margin-left:20%;
+           
+            border-radius:5px;
+            border:2px solid black;
+            margin-bottom:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container" role="navigation">
+			<a href="#" class="pull-left"><img class="img-rounded" width="50" height="50" src="Immalle.jpg"></a>
+            <a href="index.html" class="navbar-brand">Immalle</a>
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Info</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">IT-info<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Chat.html">Team Chat Tools</a></li>
+                            <li><a href="CloudStoragesPage.html">Cloudstorages</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Games<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Browsergames.html">Browsergames</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            </div>
+            
+
+        </div>
+		<div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    
+                        <h1 id="welcome">Welkom op het Immaculata Instituut!</h1>
+                        <img id="home-img-mobile" src="Home.jpg" class="hidden-lg" />
+                        <img id="home-img-desktop" src="Home.jpg" class="hidden-xs" />
+                    
+                </div>
+            </div>
+		</div>
+        <div class="modal fade" id="feedback" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form class=" form-horizontal">
+                        <div class="modal-header">
+                            <h4>Feel free to give us some feedback</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class=" form-group">
+                                <label for=" contact-name" class="col-lg-2 control-label">name</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id=" contact-name" placeholder="full-name" />
+                                </div>
+                            </div>
+                            <div class=" form-group">
+                                <label for=" contact-email" class="col-lg-2 control-label">email</label>
+                                <div class="col-lg-10">
+                                    <input type="email" class="form-control" id=" contact-email" placeholder="you@example.com" />
+                                </div>
+                            </div>
+                            <div class=" form-group">
+                                <label for=" contact-email" class="col-lg-2 control-label">message:</label>
+                                <div class="col-lg-10">
+                                    <textarea class="form-control" rows="8"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" type="submit">Send</button>
+                            <a class="btn btn-default" data-dismiss="modal">Close</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar navbar-default navbar-fixed-bottom hidden-lg hidden-xs">
+            <div class="container">
+                <p class="navbar-text pull-left">&copy; Design: Maarten Vissers, Yordi Coussement, Mario van Kerckhoven, Wout Wynen, Ignas Gers, Christophe Dumont</p>
+                <a href="http://www.immalle.be/" target="_blank" class="navbar-btn btn-succes pull-right">Bezoek hier onze school website!</a>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
